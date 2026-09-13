@@ -3,214 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- ═══════════════════════════════════════════════════════════════
-       WEDDING INVITE, STARTER KIT
-       Placeholder names and content. Photos: Unsplash (free license).
-       Search for "CUSTOMIZE" comments to find what to change.
-       ═══════════════════════════════════════════════════════════════ -->
-
-  <!-- CUSTOMIZE: title and description (shown on Google and in link previews) -->
-  <title>Emma &amp; James · 17 June 2028</title>
-  <meta name="description" content="We're getting married! Saturday 17 June 2028, Ashbourne. All the details and RSVP.">
-
-  <!-- A wedding invite site usually should NOT show up on Google: this line hides it from search engines. Remove it if you want the opposite. -->
+  <title>Yuwei Bridal Atelier · Grand Opening</title>
+  <meta name="description" content="Yuwei Bridal Atelier Grand Opening — October 11, 2026 at 10AM.">
   <meta name="robots" content="noindex">
-
-  <!-- Preview shown when you share the link (WhatsApp, Telegram, iMessage) -->
-  <meta property="og:title" content="Emma & James, 17 June 2028">
-  <meta property="og:description" content="We're getting married! All the details and RSVP.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=70">
-  <meta property="og:type" content="website">
-
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23f6f4ef'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='30' text-anchor='middle' fill='%23161616'%3EE·J%3C/text%3E%3C/svg%3E">
-
-  <!-- Free fonts from Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Julius+Sans+One&family=Karla:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <!-- Written by the local editor (editor/): don't edit by hand, it layers on top of style.css -->
-  <link rel="stylesheet" href="css/edited.css">
 </head>
 <body>
 
-  <!-- ═══════════ COVER ═══════════ -->
-  <header class="hero">
-    <!-- CUSTOMIZE: your monogram initials -->
-    <div class="monogram" aria-hidden="true">
-      <span class="mono-a">E</span><span class="mono-b">J</span>
-    </div>
+  <!-- Opening video -->
+  <section class="opening" id="opening">
+    <video class="opening-video" id="openingVideo" autoplay muted loop playsinline preload="auto">
+      <source src="assets/video/Invitaion.mp4" type="video/mp4">
+    </video>
+    <div class="opening-shade"></div>
+  </section>
 
-    <div class="hero-names">
-      <!-- CUSTOMIZE: your names -->
-      <h1>Emma <span class="amp">&amp;</span> James</h1>
-      <!-- CUSTOMIZE: the date -->
-      <p class="hero-date">17 . 06 . 2028</p>
-    </div>
-
-    <a class="scroll-hint" href="#story" aria-label="Scroll to see the details">
-      <span></span>
-    </a>
-  </header>
-
-  <main>
-
-    <!-- ═══════════ OUR STORY ═══════════ -->
-    <section class="story reveal" id="story">
-      <!-- CUSTOMIZE: your story -->
-      <p>
-        It started by chance, on a rainy afternoon and an umbrella lent to
-        the wrong person, or maybe the right one. From that day, every road
-        we walked together brought us a little closer, through laughter,
-        travels, and slow Sunday mornings.
-      </p>
-      <p>
-        After many years side by side, with hearts full of gratitude, we
-        want to share with you the most important moment of our journey
-      </p>
-      <p class="story-claim">,  the beginning of our "forever."</p>
+  <main id="invitation" class="invitation">
+    <section class="welcome">
+      <img src="assets/img/logo.jpg" alt="Yuwei Bridal Atelier Logo">
+      <p>Yuweiကိုယ်တိုင်စတင်ဖွင့်လှစ်မယ့်</br>Yuwei Bridal Atelier Opening Ceremonyကိုတက်ရောက်ရန်
+      <p>ခင်မင်ရင်းနှီးရတဲ့ မိတ်ဆွေသူငယ်ချင်းများကို</br>လေးစားစွာ ဖိတ်ကြားအပ်ပါသည်</p>
+      <div class="monogram"></div>
+      <p class="welcome-copy">to celebrate the beginning of a new chapter in bridal elegance.</p>
+      <div class="ornament">✦</div>
     </section>
+    <section class="details">
+      <p class="eyebrow">Grand Opening</p>
+      <h2>October 11, 2026</h2>
+      <p class="day">Sunday · 10:00 AM</p>
 
-    <!-- ═══════════ COUNTDOWN ═══════════ -->
-    <section class="countdown reveal" aria-label="Countdown to the wedding">
-      <h2 class="script-title">not long now...</h2>
-      <div class="countdown-grid" id="countdown">
-        <div class="cd-box"><span class="cd-num" id="cd-days">–</span><span class="cd-label">Days</span></div>
-        <div class="cd-box"><span class="cd-num" id="cd-hours">–</span><span class="cd-label">Hours</span></div>
-        <div class="cd-box"><span class="cd-num" id="cd-minutes">–</span><span class="cd-label">Minutes</span></div>
-        <div class="cd-box"><span class="cd-num" id="cd-seconds">–</span><span class="cd-label">Seconds</span></div>
+      <div class="detail-card">
+        <p class="detail-label">Location</p>
+        <p class="detail-value">Yuwei Bridal Atelier</p>
+        <p class="detail-address">〒111-0036 東京都台東区松が谷４丁目２４−１１ シティオオソネ２１-203</p>
+        <a class="button" href="https://maps.google.com/?q=〒111-0036 東京都台東区松が谷４丁目２４−１１ シティオオソネ２１-203" target="_blank" aria-label="Open location in Google Maps">View Location</a>
       </div>
     </section>
 
-    <!-- ═══════════ SCHEDULE ═══════════ -->
-    <section class="schedule" id="schedule">
-      <h2 class="script-title reveal">our day...</h2>
-
-      <!-- CUSTOMIZE: for each event, change the time, name, venue, address
-           and Google Maps link. To get the link: search the venue on
-           https://maps.google.com → Share → Copy link, and paste it in href.
-           This format always works too:
-           https://www.google.com/maps/search/?api=1&query=VENUE+NAME+CITY -->
-
-      <article class="event reveal">
-        <p class="event-time">15:00</p>
-        <h3 class="event-name">Guest Arrival</h3>
-        <p class="event-venue">The Garden Pavilion</p>
-        <p class="event-address">12 Orchard Lane, Ashbourne</p>
-        <a class="btn-location" href="https://www.google.com/maps/search/?api=1&query=Kew+Gardens+London" target="_blank" rel="noopener">Show location</a>
-      </article>
-
-      <div class="divider" aria-hidden="true"></div>
-
-      <article class="event reveal">
-        <p class="event-time">16:00</p>
-        <h3 class="event-name">Ceremony</h3>
-        <p class="event-venue">St. Mary's Chapel</p>
-        <p class="event-address">Church Street, Ashbourne</p>
-        <a class="btn-location" href="https://www.google.com/maps/search/?api=1&query=Kew+Gardens+London" target="_blank" rel="noopener">Show location</a>
-      </article>
-
-      <div class="divider" aria-hidden="true"></div>
-
-      <article class="event reveal">
-        <p class="event-time">18:30</p>
-        <h3 class="event-name">Reception</h3>
-        <p class="event-venue">The Garden Pavilion</p>
-        <p class="event-address">12 Orchard Lane, Ashbourne</p>
-        <a class="btn-location" href="https://www.google.com/maps/search/?api=1&query=Kew+Gardens+London" target="_blank" rel="noopener">Show location</a>
-      </article>
-
-      <p class="dress-code reveal">Dress code · <em>black tie</em></p>
-    </section>
-
-    <!-- ═══════════ GALLERY ═══════════ -->
-    <section class="gallery reveal" id="gallery">
-      <h2 class="script-title">our moments...</h2>
-      <!-- CUSTOMIZE: replace these with your own photos.
-           Put the files in assets/img/ and use src="assets/img/photo-name.jpg".
-           These are Unsplash photos (free license), used as placeholders. -->
+    <section class="gallery">
+      <p class="eyebrow">A Glimpse</p>
+      <h2>Bridal moments</h2>
       <div class="gallery-grid">
-        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=70" alt="The couple holding hands" loading="lazy">
-        <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1000&q=70" alt="Walking in the rain" loading="lazy">
-        <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=1000&q=70" alt="Party sparklers" loading="lazy">
-        <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1000&q=70" alt="The couple's exit" loading="lazy">
-        <img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=1000&q=70" alt="The reception table" loading="lazy">
-        <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=1000&q=70" alt="Hands intertwined" loading="lazy">
+        <button class="photo-card" data-photo="assets/img/photo1.jpg"><img src="assets/img/photo1.jpg" alt="Yuwei Bridal Atelier photo 1"></button>
+        <button class="photo-card" data-photo="assets/img/photo2.jpg"><img src="assets/img/photo2.jpg" alt="Yuwei Bridal Atelier photo 2"></button>
+        <button class="photo-card" data-photo="assets/img/photo3.jpg"><img src="assets/img/photo3.jpg" alt="Yuwei Bridal Atelier photo 3"></button>
+        <button class="photo-card" data-photo="assets/img/photo4.jpg"><img src="assets/img/photo4.jpg" alt="Yuwei Bridal Atelier photo 4"></button>
+        <button class="photo-card" data-photo="assets/img/photo5.jpg"><img src="assets/img/photo5.jpg" alt="Yuwei Bridal Atelier photo 5"></button>
+        <button class="photo-card" data-photo="assets/img/photo6.jpg"><img src="assets/img/photo6.jpg" alt="Yuwei Bridal Atelier photo 6"></button>
       </div>
-      <p class="gallery-credit">Placeholder photos · Unsplash</p>
     </section>
 
-    <!-- ═══════════ RSVP ═══════════ -->
-    <section class="rsvp reveal" id="rsvp">
-      <h2 class="rsvp-title">Confirm your attendance</h2>
-      <!-- CUSTOMIZE: the RSVP deadline -->
-      <p class="rsvp-subtitle">
-        Please confirm by 17 May 2028 ,
-        and join us for a day of celebration, music, and joy!
-      </p>
+    <section class="countdown">
+      <p class="eyebrow">Counting down to</p>
+      <h2>Grand Opening</h2>
+      <div class="count-grid">
+        <div><strong id="days">—</strong><span>Days</span></div>
+        <div><strong id="hours">—</strong><span>Hours</span></div>
+        <div><strong id="minutes">—</strong><span>Minutes</span></div>
+        <div><strong id="seconds">—</strong><span>Seconds</span></div>
+      </div>
+    </section>
 
-      <!-- This form is "static": on submit it opens the guest's email app
-           with the message already written. See the README for
-           alternatives (Formspree, Tally, Google Form) to receive
-           responses automatically. -->
-      <form id="rsvp-form" novalidate>
-        <div class="field-row">
-          <div class="field">
-            <label for="first-name">First name</label>
-            <input type="text" id="first-name" name="first-name" autocomplete="given-name" required>
-          </div>
-          <div class="field">
-            <label for="last-name">Last name</label>
-            <input type="text" id="last-name" name="last-name" autocomplete="family-name" required>
-          </div>
-        </div>
+    <section class="rsvp" id="rsvp">
+      <p class="eyebrow">Kindly Respond</p>
+      <h2>RSVP</h2>
+      <p class="rsvp-copy">တက်ရောက်နိုင်မည်ဆိုပါက အောက်ပါFormတွင် ဖြည့်စွက်ပေးပါရန်`</br>မေတ္တာရပ်ခံအပ်ပါသည်။</p>
 
-        <fieldset class="field-choice">
-          <legend>Will you be joining us?</legend>
-          <div class="choices">
-            <label class="chip"><input type="radio" name="attending" value="Yes" checked><span>Yes</span></label>
-            <label class="chip"><input type="radio" name="attending" value="No"><span>No</span></label>
-          </div>
-        </fieldset>
-
-        <div class="field">
-          <label for="guests">Number of guests with me</label>
-          <input type="number" id="guests" name="guests" min="0" max="10" value="0">
-        </div>
-
-        <div class="field">
-          <label for="guest-names">Names of guests with me</label>
-          <input type="text" id="guest-names" name="guest-names" placeholder="">
-        </div>
-
-        <div class="field">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="3"></textarea>
-        </div>
-
-        <button type="submit" class="btn-confirm">Confirm</button>
-        <p class="rsvp-note" id="rsvp-note" hidden></p>
+      <form id="rsvpForm">
+        <label>Full Name · အမည်<input name="name" type="text" required placeholder="Your name"></label>
+        <label>Phone / Email · အီးမေးလ် သို့မဟုတ် ဖုန်းနံပါတ်<input name="contact" type="text" required placeholder="How we can reach you"></label>
+        <label>Number of Guests · ဧည့်သည်အရေအတွက်<input name="guests" type="number" min="1" max="10" value="1" required></label>
+        <label>Message · အထူးမှာကြားလိုသည်များကို ဤနေရာတွင် ရေးသားပေးပါ<textarea name="message" rows="3" placeholder="A note for us (optional)"></textarea></label>
+        <button class="submit-button" type="submit">Confirm Attendance</button>
+        <p class="form-note" id="formNote"></p>
       </form>
     </section>
 
-    <!-- ═══════════ QUOTE ═══════════ -->
-    <section class="quote reveal">
-      <p>"And then choosing each other, every day,<br>as if for the first time."</p>
+    <section class="closing">
+      <h2>We look forward to<br><em>welcoming you.</em></h2>
+      <p>တက်ရောက်‌ပေးကြမည့် သူငယ်ချင်းတစ်ယောက်ချင်းစီကို<br>အထူးကျေးဇူးတင်ပါသည်❤️</p>
+      <p class="closing-date">11 · 10 · 2026</p>
     </section>
-
   </main>
 
-  <footer class="footer">
-    <p class="footer-names">Emma &amp; James</p>
-    <p class="footer-date">17 . 06 . 2028 · Ashbourne</p>
-    <p class="footer-demo">Starter kit, placeholder names, Unsplash photos</p>
-  </footer>
-
-  <!-- Lightbox for the gallery -->
-  <dialog id="lightbox" aria-label="Enlarged photo">
-    <img src="" alt="">
+  <dialog id="lightbox">
+    <button id="closeLightbox" aria-label="Close">×</button>
+    <img id="lightboxImage" src="" alt="">
   </dialog>
 
   <script src="js/main.js"></script>
