@@ -1,7 +1,7 @@
 /* Yuwei Bridal Atelier — luxury cinematic style */
 :root {
-  --bg: #11100f;
-  --bg2: #181614;
+  --bg: #000;
+  --bg2: #000;
   --text: #f5eee6;
   --muted: #b9ada0;
   --line: rgba(245, 238, 230, .24);
@@ -17,7 +17,8 @@
 }
 
 html {
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
+  background: #000
 }
 
 body {
@@ -61,10 +62,11 @@ button {
 
 .opening-video {
   position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: contain;
-  object-position: center
+  object-position: top center
 }
 
 @media(max-width:699px) {
@@ -72,6 +74,10 @@ button {
     min-height: 0;
     height: min(100dvh, calc(100vw * 12 / 9));
     aspect-ratio: 9 / 12;
+  }
+
+  .opening-video {
+    object-fit: fill;
   }
 }
 
@@ -143,6 +149,11 @@ section {
   width: min(100%, 300px);
   height: auto;
   margin: 0 auto 28px;
+}
+
+.invitaion-text {
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .eyebrow {
